@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-slab{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  .playwrite-de-grund {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 7vh;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:url(purple\ 2\ \(1\).jpg);
+    background-size: cover;
+
+  }
+
+  h1{
+    position: relative;
+    font-size: 14vh;
+    color: #c4b3e9;
+    -webkit-text-stroke:0.3vw #b9a9e9;
+
+  }
+
+  p  {
+    position: relative;
+    font-size: 5vh;
+    color: rgba(57,45,95,255);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+
+  }
+
+  h1::before{
+    text-shadow:  3px 3px 5px 0px rgba(0,0,0,0.75);
+    content:attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: rgba(57,45,95,255);
+    -webkit-text-stroke:0vw #b9a9e9;
+    border-right: 2px solid #b9a9e9;
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+  }
+
+  @keyframes animate{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+
+  
+  }
+
+  button{
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(57,45,95,255);
+    color: white;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
